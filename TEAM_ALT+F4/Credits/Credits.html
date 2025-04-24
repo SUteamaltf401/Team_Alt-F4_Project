@@ -9,18 +9,17 @@
           rel="stylesheet" 
           crossorigin="anonymous">
 
-
     <title>รายชื่อสมาชิก</title> 
 
     <style>
-    #Credits_Team {
+    .Credits_Team {
         color: #ffffff;
         padding: 15px;
         font-size: 100%;
         text-align: center;
     }
-    .body {
-      border-style: groove;
+    .body-box {
+        border-style: groove;
         max-width: 600px;
         margin: 120px auto;
         background: #fff;
@@ -32,20 +31,18 @@
     .Credits {
       display: flex;
       justify-content: center;
-      margin: 20; 
+      margin: 20px; 
       font-family: Arial, sans-serif;
     }
     .Menu {
       display: flex;
       margin: 0; 
       font-family: Arial, sans-serif;
-    }
+    } 
     </style>
 </head> 
 
-
 <body style="background-color: rgb(110, 110, 110);"> 
-
 
   <!-- Menu --> 
   <div class="Menu" style="background-color: aquamarine;" >
@@ -53,76 +50,81 @@
         <li class="nav-item"> 
           <a class="nav-link" href="/index.html">HOME</a> 
         </li> 
-        <li class="nav-item dropdown"id="Menu_Place">
+        <li class="nav-item dropdown" id="Menu_Place">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#Menu_Place">Places</a>
           <ul class="dropdown-menu" id="Menu_Places">
-              <li><a class="dropdown-item" href="/670710334/Sanamchandra.html">พระราขวังสนามจันทร์</a></li>
+              <li><a class="dropdown-item" href="/670710334/Sanamchandra.html">พระราชวังสนามจันทร์</a></li>
               <li><a class="dropdown-item" href="/670710334/องค์พระปฐมเจดีย์.html">องค์พระปฐมเจดีย์</a></li>
-
               <li><a class="dropdown-item" href="/670710725/วัดห้วยตะโก.html">วัดห้วยตะโก</a></li> 
-
               <li><a class="dropdown-item" href="/670710199/วัดพระประโทณเจดีย์วรวิหาร.html">วัดพระประโทณเจดีย์วรวิหาร</a></li>
               <li><a class="dropdown-item" href="/670710199/วัดพระเมรุ.html">วัดพระเมรุ</a></li>
-
               <li><a class="dropdown-item" href="/670710712/วัดห้วยจระเข้.html">วัดห้วยจระเข้</a></li>
               <li><a class="dropdown-item" href="/670710712/เซ็นทรัลนครปฐม.html">เซ็นทรัลนครปฐม</a></li>
           </ul>
         </li>
-
         <li class="nav-item"> 
-          <a class="nav-link" href="/670710199/วัดพระเมรุ.html">BACK</a> 
+          <a class="nav-link" href="/670710712/เซ็นทรัลนครปฐม.html">BACK</a> 
         </li>
         <li class="nav-item"> 
           <a class="nav-link disabled"></a> 
         </li>
-
         <li class="nav-item"> 
-          <a class="nav-link" style="background-color: #fff;">Member</a> 
+          <a class="nav-link bg-white">Member</a> 
         </li> 
     </ul>
-    </div>
+  </div>
 
-    <!-- กล่อง --> 
-    <div class="container">
-        <div class="Credits">
-            <div class="body">
-                <h1 style="text-align: center;"><b><em>สมาชิก Team ALT+F4</em></b></h1>
-                
-                <!-- ตาราง --> 
-                <table class="table table-hover"> 
-                    <thead> 
-                      <tr> 
-                        <th style="text-align: center;">ลำดับ</th> 
-                        <th style="text-align: center;">ชื่อ</th> 
-                        <th style="text-align: center;">รหัสนักศึกษา</th> 
-                      </tr> 
-                    </thead> 
-                    <tbody> 
-                        <tr><td id="Credits_Team" style="background-color: #af0000;">1</td><td id="Credits_Team" style="background-color: #af0000;">นายรัฐศาสตร์ ลูกเสือ</td><td id="Credits_Team" style="background-color: #af0000;">670710334</td></tr> 
-                        <tr><td id="Credits_Team"style="background-color: #ffd500">2</td><td id="Credits_Team"style="background-color: #ffd500">นายพชรพงศ์ บัวควาน</td><td id="Credits_Team"style="background-color: #ffd500">670710725</td></tr> 
-                        <tr><td id="Credits_Team"style="background-color: #0FC900;">3</td><td id="Credits_Team"style="background-color: #0FC900;">นายชนะโชค ชัยศรีวงค์</td><td id="Credits_Team"style="background-color: #0FC900;">670710712</td></tr> 
-                        <tr><td id="Credits_Team"style="background-color: #00A2E8;">4</td><td id="Credits_Team"style="background-color: #00A2E8;">นายชยานันท์ องอาจ</td><td id="Credits_Team"style="background-color: #00A2E8;">670710199</td></tr> 
-                    </tbody> 
-                  </table>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Footer --> 
-    <footer style="background-color: black;">
-      <div class="container" style="background-color: rgb(247, 248, 215);">
-          <p  style="text-align: center; -webkit-text-fill-color: rgb(0, 0, 0);"><a class="btn btn-active" style="color: rgb(0, 0, 0);"><b id="Text_Group_Name">Team ALT+F4</b></a></p>
+  <!-- Content Box --> 
+  <div class="container">
+    <div class="Credits">
+      <div class="body-box">
+        <h1 class="text-center mb-4"><b><em>สมาชิก Team ALT+F4</em></b></h1>
+        <!-- ตารางสมาชิก --> 
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="text-center">ลำดับ</th>
+              <th class="text-center">ชื่อ</th>
+              <th class="text-center">รหัสนักศึกษา</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="Credits_Team bg-danger">1</td>
+              <td class="Credits_Team bg-danger">นายรัฐศาสตร์ ลูกเสือ</td>
+              <td class="Credits_Team bg-danger">670710334</td>
+            </tr>
+            <tr>
+              <td class="Credits_Team bg-warning">2</td>
+              <td class="Credits_Team bg-warning">นายพชรพงศ์ บัวควาน</td>
+              <td class="Credits_Team bg-warning">670710725</td>
+            </tr>
+            <tr>
+              <td class="Credits_Team bg-success">3</td>
+              <td class="Credits_Team bg-success">นายชนะโชค ชัยศรีวงค์</td>
+              <td class="Credits_Team bg-success">670710712</td>
+            </tr>
+            <tr>
+              <td class="Credits_Team bg-info">4</td>
+              <td class="Credits_Team bg-info">นายชยานันท์ องอาจ</td>
+              <td class="Credits_Team bg-info">670710199</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </footer>
+    </div>
+  </div>
 
+  <!-- Footer --> 
+  <footer style="background-color: black;">
+    <div class="container text-center" style="background-color: rgb(247, 248, 215);">
+      <p><a class="btn btn-link" style="color: rgb(0, 0, 0);"><b id="Text_Group_Name">Team ALT+F4</b></a></p>
+    </div>
+  </footer>
 
-    <!-- Bootstrap Script --> 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-    <!--Script File --> 
-    <script src="/JavaScript_File/Menu_Script.js"></script>
-</body> 
-</html> 
+  <!-- Bootstrap Scripts --> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="/JavaScript_File/Menu_Script.js"></script>
+</body>
+</html>
